@@ -14,7 +14,8 @@ return require('packer').startup(function(use)
 	}
 
 	use "blazkowolf/gruber-darker.nvim"
-	
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('theprimeagen/harpoon')
+	use('mbbill/undotree')
+	use('tpope/vim-fugitive')
 end)
