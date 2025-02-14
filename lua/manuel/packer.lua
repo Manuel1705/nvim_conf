@@ -12,10 +12,17 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-
+    -- themes
 	use "blazkowolf/gruber-darker.nvim"
+	use 'tanvirtin/monokai.nvim'
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
+	use {
+			'nvim-tree/nvim-tree.lua',
+			requires = {
+					'nvim-tree/nvim-web-devicons', -- optional
+			},
+	}
 end)
